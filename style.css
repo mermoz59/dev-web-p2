@@ -259,7 +259,6 @@ header nav div a:hover {
 
 .result__lodging {
     background-color: #f2f2f2;
-    height: 626px;
     width: 66%;
     border-radius: 20px;
     padding: 42px 40px 46px 40px;
@@ -270,11 +269,10 @@ header nav div a:hover {
 .result__lodging .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-around;
     margin-top: 23px;
     margin-bottom: 40px;
-    height: 428px;
+    gap: 30px;
 }
 
 .cards__small {
@@ -315,7 +313,6 @@ header nav div a:hover {
 
 .result__popular {
     background-color: #f2f2f2;
-    height: 625px;
     width: 33%;
     padding: 41px 40px 34px 37px;
     border-radius: 20px;
@@ -339,7 +336,9 @@ header nav div a:hover {
     flex-direction: column;
     box-sizing: border-box;
     margin-top: 26px;
-    gap: 30px;
+    height: 100%;
+    justify-content: space-around;
+    padding-bottom: 34px;
 }
 
 .cards__medium {
@@ -385,7 +384,6 @@ header nav div a:hover {
 .activity--results .cards {
     display: flex;
     justify-content: space-between;
-    gap: 43px;
     margin-top: 20px;
 }
 
@@ -453,7 +451,7 @@ footer h2 {
 
     .search__filters__button button {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 10px;
     }
 
     /* SECTION 2 : SEARCH RESULTS */
