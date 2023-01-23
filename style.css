@@ -687,7 +687,7 @@ footer h2 {
     }
 
     .activity--results .cards {
-        margin-top: 10px;
+        margin-top: 15px;
         flex-direction: column;
         gap: 24px;
     }
