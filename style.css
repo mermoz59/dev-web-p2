@@ -68,6 +68,11 @@ ul li {
 
 /* HEADER */
 
+header {
+    width: 96%;
+    padding: 0% 2%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -104,7 +109,8 @@ header nav div a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 9px;
+    width: 96%;
+    padding: 2%;
 }
 
 .search h1 {
@@ -182,8 +188,8 @@ header nav div a:hover {
     border: 2px solid #d9d9d9;
     border-radius: 25px;
     height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
 }
 
@@ -246,7 +252,8 @@ header nav div a:hover {
 
 .search--result {
     display: flex;
-    margin-top: 39px;
+    width: 96%;
+    padding: 2%;
 }
 
 .note i {
@@ -263,7 +270,7 @@ header nav div a:hover {
     border-radius: 20px;
     padding: 42px 40px 46px 40px;
     box-sizing: border-box;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .result__lodging .cards {
@@ -272,7 +279,7 @@ header nav div a:hover {
     justify-content: space-around;
     margin-top: 23px;
     margin-bottom: 40px;
-    gap: 30px;
+    gap: 20px;
 }
 
 .cards__small {
@@ -370,6 +377,10 @@ header nav div a:hover {
     gap: 7px;
 }
 
+.info__title p {
+    font-size: 14px;
+}
+
 .cards__medium__info .note {
     display: flex;
     gap: 2px;
@@ -378,29 +389,48 @@ header nav div a:hover {
 /* SECTION 3 */
 
 .activity--results {
-    margin-top: 60px;
-}
-
-.activity--results .cards {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    width: 96%;
+    padding: 2%;
+}
+
+.activity--results h1 {
+    flex: 100%;
+    padding-bottom: 20px;
+    padding-left: 30px;
 }
 
 .card__large {
+    height: 444.51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    box-shadow: 6px 6px 15px rgb(0 0 0 / 20%);
     border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+}
+
+.activity--results a {
+    width: 22%;
 }
 
 .card__large img {
     height: 389px;
-    width: 302px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-.card__large__title {
-    padding: 20px 36px 21px 19px;
+.card__large__title h4 {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* FOOTER */
@@ -409,9 +439,10 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
-    margin-top: 61px;
+    margin: 30px 0 0 25px;
     padding: 45px 280px 55px 70px;
     box-sizing: border-box;
+    width: 96%;
 }
 
 footer div {
@@ -463,6 +494,11 @@ footer h2 {
     .result__lodging {
         width: 100%;
         margin-bottom: 53px;
+        padding: 30px
+    }
+
+    .result__lodging .cards {
+        gap: 10px;
     }
 
     .result__popular {
@@ -474,7 +510,7 @@ footer h2 {
     .result__popular .cards {
         display: flex;
         flex-direction: row;
-        gap: 23px;
+        gap: 10px;
     }
 
     .cards__medium {
@@ -535,14 +571,30 @@ footer h2 {
 
 @media screen and (max-width: 768px) {
     body {
-        max-width: 375px;
-        margin: auto;
+        max-width: 768px;
     }
 
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbutton {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header {
+        padding: 0;
+        width: 100%;
+    }
+
+    header .navbutton a {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       flex: 1;
     }
 
     header .navbutton a.heber {
@@ -577,8 +629,12 @@ footer h2 {
         margin-top: 36px;
     }
 
+    .search__bar form {
+        flex: 1;
+    }
+
     .search__bar form input {
-        width: 240px;
+        width: 100%;
     }
 
     .search__bar button.text {
@@ -593,13 +649,16 @@ footer h2 {
         flex-direction: column;
         margin-top: 34px;
         align-items: flex-start;
+        width: 100%;
     }
 
     .search__filters__button {
-        flex-wrap: wrap;
-        width: 334px;
+        display: flex;
+        flex-direction: row;
         margin-top: 15px;
         gap: 14px;
+        width: 100%;
+        flex-wrap: wrap;
     }
 
     .search__filters button img {
@@ -608,8 +667,8 @@ footer h2 {
 
     .search__filters__button button {
         height: 50px;
-        width: 160px;
-        font-size: 11px;
+        font-size: 10px;
+        flex: 45%;
     }
     
     /* SECTION 2 : SEARCH RESULTS */
@@ -620,7 +679,7 @@ footer h2 {
 
     .result__popular {
         border-radius: 0;
-        width: 375px;
+        width: 100%;
         height: auto;
         padding: 28px 20px 47px 20px;
     }
@@ -630,9 +689,8 @@ footer h2 {
         gap: 11px;
     }
 
-    
     .cards__medium {
-        width: 334px;
+        width: 100%;
     }
     
     .cards__medium img {
@@ -648,7 +706,7 @@ footer h2 {
         background-color: white;
         padding: 26px 20px 47px 20px;
         height: auto;
-        width: 375px;
+        width: 100%;
         margin: 0;
     }
 
@@ -657,16 +715,16 @@ footer h2 {
         flex-wrap: nowrap;
         margin-top: 19px;
         height: auto;
-        gap: 12px;
+        gap: 20px;
     }
 
     .cards__small {
-        width: 335px;
+        width: 100%;
         height: 199px;
     }
 
     .cards__small img {
-        width: 325px;
+        width: 100%;
         height: 114px;
     }
 
@@ -676,30 +734,31 @@ footer h2 {
     /* SECTION 3 : ACTIVITES A MARSEILLE */
 
     .activity--results {
-        width: 375px;
+        padding: 2%;
         height: auto;
-        padding: 28px 20px 47px 20px;
         margin-top: 0;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .activity--results a {
+        width: 100%;
     }
 
     .activity--results h1 {
         padding-right: 200px;
-    }
-
-    .activity--results .cards {
-        margin-top: 10px;
-        flex-direction: column;
-        gap: 24px;
+        padding-left: 0;
     }
 
     .card__large {
         height: 190px;
-        width: 335px;
+        width: 96%;
     }
 
     .card__large img {
         height: 134px;
-        width: 335px;
+        width: 100%;
     }
 
     /* FOOTER */
@@ -708,6 +767,8 @@ footer h2 {
         flex-direction: column;
         padding: 45px 30px 50px 30px;
         gap: 40px;
+        margin-left: 15px;
+        width: 96%;
     }
 
 
