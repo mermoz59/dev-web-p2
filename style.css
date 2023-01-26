@@ -595,6 +595,7 @@ footer h2 {
        display: flex;
        justify-content: center;
        flex: 1;
+       padding: 5%;
     }
 
     header .navbutton a.heber {
