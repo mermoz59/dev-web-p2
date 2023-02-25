@@ -25,18 +25,16 @@
     <!-- MAIN -->
     <main>
         <!-- SECTION 1 : RECHERCHE -->
-        <section class="search">
+        <section class="search" action="get" method="get">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h3>En plein centre-ville ou en pleine nature</h3>
             <!-- SECTION 1 : SEARCH BAR -->
-            <div class="search__bar">
+            <form class="search__bar">
                 <span class="fa-solid fa-location-dot"></span>
-                <form action="get" method="get">
-                    <input type="search" name="search bar" id="citysearch" placeholder="Marseille, France">
-                </form>
+                <input type="search" name="search bar" id="citysearch" placeholder="Marseille, France">
                 <button class="text">Rechercher</button>
                 <button class="loupe"><img src="images/icon/loupe.png" alt="loupe"></button>
-            </div>
+            </form>
             <!-- SECTION 1 : SEARCH FILTERS -->
             <div class="search__filters">
                 <h2>Filtres</h2>
@@ -55,9 +53,9 @@
                 <h3>Plus de 500 logements sont disponibles dans cette ville</h3>
             </div>
         </section>
-        <!-- SECTION 2 : HEBERGEMENTS A MARSEILLE -->
+        <!-- SECTION 2 : RESULTAT DE RECHERCHE -->
         <section id="lodging" class="search--result">
-            <!-- SECTION 2 : BLOC 1-->
+            <!-- SECTION 2 : BLOC GAUCHE-->
             <div class="result__lodging">
                 <h1>Hébergements à Marseille</h1>
                 <div class="cards">
@@ -148,7 +146,7 @@
                 </div>
                 <a href="#"><h2>Afficher plus</h2></a>
             </div>
-            <!-- SECTION 2 : BLOC 2-->
+            <!-- SECTION 2 : BLOC DROITE-->
             <div class="result__popular">
                 <div class="title">
                     <h1>Les plus populaires</h1>
