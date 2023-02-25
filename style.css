@@ -138,7 +138,7 @@ header nav div a:hover {
     cursor: pointer;
 }
 
-.search__bar form input {
+.search__bar input {
     border: 1px solid;
     border-color: #d9d9d9;
     width: 230px;
@@ -282,9 +282,12 @@ header nav div a:hover {
     gap: 20px;
 }
 
+.result__lodging a {
+    width: 31.3%;
+}
+
 .cards__small {
-    height: 199px;
-    width: 100%;
+    height: auto;
     border-radius: 20px;
     background-color: white;
     border: 5px solid #ffffff;
@@ -294,7 +297,7 @@ header nav div a:hover {
 
 .cards__small img {
     height: 114px;
-    width: 236px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -358,7 +361,7 @@ header nav div a:hover {
 
 .cards__medium img {
     height: 134px;
-    width: 127px;
+    width: 40%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
     border: 5px solid #ffffff;
@@ -630,11 +633,11 @@ footer h2 {
         margin-top: 36px;
     }
 
-    .search__bar form {
+    .search__bar {
         flex: 1;
     }
 
-    .search__bar form input {
+    .search__bar input {
         width: 100%;
     }
 
@@ -676,6 +679,8 @@ footer h2 {
 
     .search--result {
         flex-direction: column-reverse;
+        padding: 0;
+        width: 100%;
     }
 
     .result__popular {
@@ -709,6 +714,10 @@ footer h2 {
         height: auto;
         width: 100%;
         margin: 0;
+    }
+
+    .result__lodging a {
+        width: 100%;
     }
 
     .result__lodging .cards {
@@ -766,10 +775,10 @@ footer h2 {
 
     footer {
         flex-direction: column;
-        padding: 45px 30px 50px 30px;
+        padding: 45px 30px 50px 45px;
         gap: 40px;
-        margin-left: 15px;
-        width: 96%;
+        width: 100%;
+        margin-left: 0;
     }
 
 
