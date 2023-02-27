@@ -283,11 +283,11 @@ header nav div a:hover {
 }
 
 .result__lodging a {
-    width: 31.3%;
+    width: 30%;
 }
 
 .cards__small {
-    height: auto;
+    height: 100%;
     border-radius: 20px;
     background-color: white;
     border: 5px solid #ffffff;
@@ -516,8 +516,11 @@ footer h2 {
         gap: 10px;
     }
 
+    .result__popular a {
+    width: 30%;
+    }
+
     .cards__medium {
-        width: 247px;
         height: 144px;
     }
 
@@ -688,6 +691,10 @@ footer h2 {
         width: 100%;
         height: auto;
         padding: 28px 20px 47px 20px;
+    }
+
+    .result__popular a {
+    width: 100%;
     }
 
     .result__popular .cards {
