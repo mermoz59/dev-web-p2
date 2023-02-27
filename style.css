@@ -397,7 +397,6 @@ header nav div a:hover {
     margin-top: 10px;
     flex-wrap: wrap;
     padding-bottom: 30px;
-    width: 96%;
     padding: 2%;
 }
 
@@ -623,8 +622,8 @@ footer h2 {
     /* SECTION 1 : SEARCH */
 
     .search {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .search h1 {
@@ -690,7 +689,7 @@ footer h2 {
         border-radius: 0;
         width: 100%;
         height: auto;
-        padding: 28px 20px 47px 20px;
+        padding: 28px 2% 47px 2%;
     }
 
     .result__popular a {
@@ -717,7 +716,7 @@ footer h2 {
 
     .result__lodging {
         background-color: white;
-        padding: 26px 20px 47px 20px;
+        padding: 26px 2% 47px 2%;
         height: auto;
         width: 100%;
         margin: 0;
@@ -770,7 +769,7 @@ footer h2 {
 
     .card__large {
         height: 190px;
-        width: 96%;
+        width: unset;
     }
 
     .card__large img {
